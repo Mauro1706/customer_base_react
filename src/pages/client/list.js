@@ -54,7 +54,7 @@ class ListClient extends Component {
         const target = event.target;
         const value = target.value;
         console.log(value);
-        api.delete(`/client/action/${value}/1`)
+        api.put(`/client/action/${value}/1`)
             .then(response => {
                 if (!response.error) {
                    window.location.reload();
@@ -69,7 +69,7 @@ class ListClient extends Component {
     handleButtonChangeAgradecer = event => {
         const target = event.target;
         const value = target.value;
-        api.delete(`/client/action/${value}/0`)
+        api.put(`/client/action/${value}/0`)
             .then(response => {
                 if (!response.error) {
                    window.location.reload();
