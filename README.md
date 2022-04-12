@@ -1,5 +1,3 @@
-<p align="center"><a href="" target="_blank"><img src="" width="350"></a></p>
-
 ### `Certificar que a API em Node.js esta rodando ou esta em algum servidor junto ao MongoDB`
 #### `https://github.com/Mauro1706/`
 
