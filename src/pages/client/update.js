@@ -109,7 +109,7 @@ class Editar extends Component {
                        <option value="">Selecione</option>
                       {statusList.map((status, index) => (
                           <option key={index} 
-                            selected={status.value === this.state.aval.contractStatus} 
+                            selected={status.value.toLowerCase() === this.state.aval.contractStatus.toLowerCase()} 
                             value={status.value}>{status.value}</option>
                       ))}
                     </select>

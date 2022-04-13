@@ -141,12 +141,12 @@ class ListClient extends Component {
                                     </button>
                                     &nbsp;
                                     <button onClick={this.handleButtonChangeCobrar} refresh="true" value={client._id}
-                                        disabled={client.contractStatus !== 'Em Atraso' ? `disabled` : ``}
+                                        disabled={client.contractStatus.toLowerCase() !== 'em atraso' ? `disabled` : ``}
                                         className="btn btn-outline-warning">Cobrar
                                     </button>
                                     &nbsp;
                                     <button onClick={this.handleButtonChangeAgradecer} 
-                                        disabled={client.contractStatus !== 'Pago' ? `disabled` : ``} 
+                                        disabled={client.contractStatus.toLowerCase() !== 'pago' ? `disabled` : ``} 
                                         refresh="true" value={client._id}
                                             className="btn btn-outline-success">Agradecer Pagamento
                                     </button>
