@@ -13,7 +13,7 @@ class Editar extends Component {
         telephone: "",
         contractNumber: "",
         contractValue: "",
-        contractStatusId: ""
+        contractStatus: ""
       },
       statusList: [],
       erro: null,
@@ -108,7 +108,9 @@ class Editar extends Component {
                      onChange={ this.handleInputChange }>
                        <option value="">Selecione</option>
                       {statusList.map((status, index) => (
-                          <option key={index} value={status.value}>{status.value}</option>
+                          <option key={index} 
+                            selected={status.value === this.state.aval.contractStatus} 
+                            value={status.value}>{status.value}</option>
                       ))}
                     </select>
                   </div>
